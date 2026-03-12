@@ -1,4 +1,30 @@
-# Unifaat 2026 — Desenvolvimento Web
+# 1. inicializar (se ainda não fez)
+git init
+
+# 2. adicionar arquivos (inclui tf03.js e README.md)
+git add .
+
+# 3. fazer um commit
+git commit -m "Adiciona tf03.js e README do exercício da Aula 03"
+
+# 4. vincular o repositório remoto (substitua pelo seu URL)
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+
+# 5. enviar para o GitHub
+git push -u origin main# 1. inicializar (se ainda não fez)
+git init
+
+# 2. adicionar arquivos (inclui tf03.js e README.md)
+git add .
+
+# 3. fazer um commit
+git commit -m "Adiciona tf03.js e README do exercício da Aula 03"
+
+# 4. vincular o repositório remoto (substitua pelo seu URL)
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPO.git
+
+# 5. enviar para o GitHub
+git push -u origin main# Unifaat 2026 — Desenvolvimento Web
 
 ## Node — Primeiro Bimestre
 
@@ -84,3 +110,24 @@ Ou executar diretamente com o caminho relativo a partir da raiz do repositório:
 - Organizar os exemplos por temas ao longo do primeiro bimestre
 - Facilitar a execução prática dos arquivos no terminal
 - Servir como base de apoio para aulas introdutórias de desenvolvimento web com Node.js
+
+---
+
+## Trabalho Final tf03.js
+
+O arquivo `tf03.js` é um exercício específico da Aula 03, criado para demonstrar:
+
+- criação e uso de objetos com propriedades simples
+- arranjos (`array`) dentro de objetos
+- iteração com `for...in` e `for...of`
+- comparação de referências e cópias (incluindo spread operator)
+- comportamento de arrays compartilhados entre objetos
+- conversão do objeto em JSON via `JSON.stringify()`
+
+Para executar o exemplo:
+
+```bash
+node tf03.js
+```
+
+O código imprime no terminal cada etapa do exercício, facilitando o entendimento dos conceitos.
