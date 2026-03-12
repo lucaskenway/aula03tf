@@ -1,29 +1,56 @@
-// tf03.js - versão simples
-const obj = {
+// tf03.js
+// Exercício: demonstrar conceitos de objeto com array, iterações, cópia e JSON
+
+// objeto principal com propriedades simples e um array interno
+const pessoa = {
     nome: "Maria",
     idade: 28,
-    prof: "Dev",
-    skills: ["JS", "HTML", "CSS"]
+    profissao: "Desenvolvedora",
+    habilidades: ["JavaScript", "HTML", "CSS"]
 };
 
-console.log("inicial", obj);
+console.log("Objeto inicial:", pessoa);
 
-console.log("\nfor...in:");
-for (let k in obj) console.log(k, obj[k]);
+// criação e uso de object já demonstrado acima
+// uso de array dentro de object é a propriedade 'habilidades'
 
-console.log("\nfor...of:");
-for (let s of obj.skills) console.log(s);
+// iteração nas propriedades do objeto com for...in
+console.log("\nIterando propriedades com for...in:");
+for (let chave in pessoa) {
+    console.log(chave, ':',     git add tf03.js
+    git commit -m "Restaurada versão detalhada de tf03.js"
+    git pushpessoa[chave]);
+}
 
-const ref = obj;
-console.log("\nref === obj?", ref === obj);
+// iteração nos itens do array com for...of
+console.log("\nIterando array de habilidades com for...of:");
+for (let habilidade of pessoa.habilidades) {
+    console.log(habilidade);
+}
 
-const copia = {...obj};
-console.log("copia === obj?", copia === obj);
+// comparação entre tipos de referência
+const outraPessoa = pessoa; // copia por referência
+console.log("\nCópia por referência (outraPessoa = pessoa):");
+console.log("outraPessoa === pessoa?", outraPessoa === pessoa);
 
-copia.nome = "João";
-console.log("nome copia/obj", copia.nome, obj.nome);
+// exemplo de cópia com spread operator (shallow)
+const copiaPessoa = {...pessoa};
+console.log("\nCópia com spread operator (shallow):");
+console.log("copiaPessoa === pessoa?", copiaPessoa === pessoa);
 
-copia.skills.push("Node");
-console.log("skills copia/obj", copia.skills, obj.skills);
+// modificação em uma propriedade simples e no array para observar comportamentos
+copiaPessoa.nome = "João";
+console.log("Depois de alterar copiaPessoa.nome:", copiaPessoa.nome, pessoa.nome);
 
-console.log("\njson", JSON.stringify(obj));
+// modificando o array interno para ver que o spread não clonou o array
+copiaPessoa.habilidades.push('Node.js');
+console.log("Depois de alterar copiaPessoa.habilidades:");
+console.log("copiaPessoa.habilidades", copiaPessoa.habilidades);
+console.log("pessoa.habilidades", pessoa.habilidades);
+
+// transformação do objeto em JSON
+const json = JSON.stringify(pessoa);
+console.log("\nObjeto transformado em JSON:", json);
+
+// final do exercício
+console.log("\nExercício concluído com tf03.js");
