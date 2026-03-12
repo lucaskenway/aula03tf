@@ -4,6 +4,8 @@
 
 Exemplos práticos para rodar no terminal com `node`.
 
+Material desenvolvido pelo professor Luan Tavares.
+
 ### Organização do repositório
 
 Este repositório está organizado por pastas temáticas, separando os conteúdos introdutórios de Node.js ao longo do bimestre. A ideia é manter os exemplos agrupados por assunto, facilitando tanto a navegação quanto o uso em sala de aula.
@@ -14,7 +16,7 @@ Dentro de cada pasta, os arquivos são independentes entre si e podem ser execut
 
 ### Requisitos
 
-- Node.js 24
+- Node.js >= 24
 
 Para conferir:
 
@@ -22,9 +24,13 @@ Para conferir:
 
 ### Como executar
 
-Entre na pasta desejada e execute o arquivo com `node`:
+Você pode entrar no diretório desejado e executar o arquivo com `node`:
 
-    node nome-do-arquivo.js
+    node 01-escopo-lexico.js
+
+Ou executar diretamente com o caminho relativo a partir da raiz do repositório:
+
+    node 02-tipos-primitivos-escopo-lexico/01-escopo-lexico.js
 
 ### Objetivo do material
 
