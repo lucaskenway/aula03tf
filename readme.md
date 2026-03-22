@@ -48,6 +48,10 @@ Dentro de cada pasta, os arquivos são independentes entre si e podem ser execut
 Para conferir:
 
     node -v
+
+### Arquivos Principais
+
+- **tf-04.js**: Demonstração dos conceitos centrais sobre funções em JavaScript, incluindo uso básico de funções, função como valor em constante, uso de função em objeto como método e exemplo de callback. Execute com `node tf-04.js`.
     git --version
 
 ### Passo a passo rápido no WSL / Linux
